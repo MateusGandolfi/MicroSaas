@@ -3,13 +3,6 @@ import { Label } from '@/components/ui/label'
 import { Input } from '@/components/ui/input'
 import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
-import {
-  Carousel,
-  CarouselItem,
-  CarouselContent,
-  CarouselNext,
-  CarouselPrevious
-} from '@/components/ui/carousel'
 import { EnvelopeOpenIcon, PersonIcon, LockClosedIcon } from '@radix-ui/react-icons'
 import {
   Card,
