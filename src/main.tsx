@@ -2,10 +2,10 @@ import './global.css'
 
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { SignIn } from './App.tsx'
+import { LoginPage } from './App.tsx'
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
-    <SignIn />
+    <LoginPage />
   </React.StrictMode>,
 )
