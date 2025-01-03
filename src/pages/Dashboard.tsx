@@ -1,8 +1,8 @@
-import { useNavigate } from 'react-router-dom';
-import { Button } from '@/components/ui/button'; // Ajuste o caminho dos seus componentes
-import { Separator } from '@/components/ui/separator';
+import { Routes, useNavigate } from 'react-router-dom';
+import { Button } from '@/src/components/ui/button'; // Ajuste o caminho dos seus componentes
+import { Separator } from '@/src/components/ui/separator';
 
-export function DashboardPage() {
+export default function DashboardPage() {
   const navigate = useNavigate();
 
   const handleLogout = () => {

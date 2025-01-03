@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Label } from '@/components/ui/label';
-import { Input } from '@/components/ui/input';
-import { Button } from '@/components/ui/button';
-import { Separator } from '@/components/ui/separator';
+import { Label } from '@/src/components/ui/label';
+import { Input } from '@/src/components/ui/input';
+import { Button } from '@/src/components/ui/button';
+import { Separator } from '@/src/components/ui/separator';
 import { EnvelopeOpenIcon, PersonIcon, LockClosedIcon } from '@radix-ui/react-icons';
 import {
   Card,
@@ -12,10 +12,11 @@ import {
   CardContent,
   CardTitle,
   CardFooter
-} from '@/components/ui/card';
-import { Checkbox } from '@/components/ui/checkbox';
+} from '@/src/components/ui/card';
+import { Checkbox } from '@/src/components/ui/checkbox';
+import { Routes } from 'react-router-dom';
 
-export function LoginPage() {
+export default function LoginPage() {
   const navigate = useNavigate();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
@@ -36,6 +37,7 @@ export function LoginPage() {
   };
 
   return (
+    <Routes>
     <main className='h-screen flex w-full'>
       <section className='flex items-center justify-center bg-background h-full max-w-3xl w-full bg-zinc-100'>
         <Card className='w-full p-2 max-w-lg'>
@@ -112,5 +114,6 @@ export function LoginPage() {
         </Card>
       </section>
     </main>
+    </Routes>
   );
 }
