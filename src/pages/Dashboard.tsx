@@ -1,4 +1,4 @@
-import { Routes, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Button } from '@/src/components/ui/button'; // Ajuste o caminho dos seus componentes
 import { Separator } from '@/src/components/ui/separator';
 
